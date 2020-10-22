@@ -31,17 +31,17 @@ public class AccessibilityServiceMonitor extends AccessibilityService {
     /**
      * Keep App 辅助功能
      */
-    private boolean isKeepEnable = true;
+    private boolean isKeepEnable = false;
 
     /**
      * 支付宝 App 辅助功能
      */
-    private boolean isAlipayForest = true;
+    private boolean isAlipayForest = false;
 
     /**
      * 联通手机营业厅 辅助功能
      */
-    private boolean isLiangTongEnable = true;
+    private boolean isLiangTongEnable = false;
 
     /**
      * 微信运动的自动点赞器
@@ -221,7 +221,8 @@ public class AccessibilityServiceMonitor extends AccessibilityService {
      * 启动UI界面
      */
     private void startUI() {
-        startAlipayUI();
+        return;
+//        startAlipayUI();
     }
 
     private void startAlipayUI() {
@@ -232,4 +233,5 @@ public class AccessibilityServiceMonitor extends AccessibilityService {
     private void startLiangTongUI() {
         LiangTongMonitor.startLiangTongUI(this);
     }
+
 }
