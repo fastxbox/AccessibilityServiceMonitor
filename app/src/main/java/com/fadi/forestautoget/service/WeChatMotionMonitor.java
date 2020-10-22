@@ -11,7 +11,6 @@ import java.util.List;
 
 public class WeChatMotionMonitor {
 
-
     public static void policy(AccessibilityNodeInfo nodeInfo, String packageName, String className) {
         if (nodeInfo == null) {
             return;
